@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8" />
+	<title>自己紹介</title>
+</head>
+
+<body>
+	<ol>
+		<% for (let i=0; i<names.length; i++) { %>
+			<li><%= names[i] %>: <%= messages[i] %></li>
+		<% } %>
+	</ol>
+	<form action="/send", method="post">
+		<input name="name">名前</>
+		<input name="message">メッセージ</>
+		<button>送信</button>
+	</form>
+</body>
+
+</html>
