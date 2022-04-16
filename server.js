@@ -160,5 +160,8 @@ app.post("/send", (request, response) => {
 	// const html = ejs.render(template, {names: names, messages: messages});
 	// response.send(`your name is ${request.body.name} and your age is ${request.body.age}`);
 })
-app.listen(3000);
+
+const port = process.env.PORT || 3000;
+
+app.listen(port);
 
